@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App4"
-             x:Class="BlippOn.WelomePage"
-             BackgroundColor="White">
+             x:Class="BlippOn.LoginPage"
+             Title = "BlippOn"
+             BackgroundColor="White"
+             >
            
     <ContentPage.Content>
         <Grid BackgroundColor="White">
@@ -13,11 +15,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0" Grid.Row="0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,20,0,0" Grid.Row="0">
 
 
                 <Label Text="Select Language"/>
-                <Image Source="expand-arrow.png" Opacity="0.6" VerticalOptions="Start" Margin="0,3,0,0"/>
+                <Image Source="ic_keyboard_arrow_down.png" Opacity="0.6" VerticalOptions="Start" Margin="0,0,0,5"  />
                     
                 </StackLayout>
 
@@ -34,50 +36,47 @@
                     <RowDefinition Height="*"/>
     
                 </Grid.RowDefinitions>
+               <!--Avatar Icon -->
                 <Image Source="avatar.png" HeightRequest="70" VerticalOptions="EndAndExpand"/>
+
+                 <!--Input name & Email -->
                 <Entry Grid.Row="1" Placeholder="Email or Phone Number" PlaceholderColor="#bababa" FontSize="16"/>
                 <Entry Grid.Row="2" Placeholder="Password" PlaceholderColor="#bababa" FontSize="16"/>
                 <Button Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3"/>
-                <Label Text="LoginTrouble?GetHelp" HorizontalOptions="Center" Grid.Row="4" Margin="0,10,0,0" FontSize="12"/>
+                  <!--Login Trouble -->
+                <Label Text="Login Trouble? Get Help" HorizontalOptions="Center" Grid.Row="4" Margin="0,10,0,0" FontSize="12"/>
 
                 <Grid Grid.Row="5">
-
                     <Grid.ColumnDefinitions>
-
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
-                        
-
-
                     </Grid.ColumnDefinitions>
+
+                      <!--divider -->
                     <Label BackgroundColor="#bababa" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
                     <!--<Label Text="" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>-->
-                    <Image Source="expand-arrow.png" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>
+
+                        <!--Center Image -->
+                    <Image Source="facebook_square.png" Grid.Column="1" VerticalOptions="Center" Margin="10,0,10,0"/>
 
 
+                        <!--Login With Facebook Section -->
                     <Label BackgroundColor="#bababa" Grid.Column="2" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
-
-
-
                 </Grid>
 
+
+                <!--Login With Facebook Section -->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Grid.Row="6">
-
-                   
-                    <Label Text="LoginWithFacebook" TextColor="#485992"  />
-
-
+                    <Label Text="Login with Facebook" TextColor="#485992"  />
                 </StackLayout>
-
             </Grid>
 
-            <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
 
+            <!--Dont have an account login Section -->
+            <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
                 <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
                 <Label Text="Dont'Have Account Login? SignUp" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-
-
             </StackLayout>
             
             

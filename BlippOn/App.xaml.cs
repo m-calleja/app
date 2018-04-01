@@ -8,7 +8,8 @@ namespace BlippOn
         {
             InitializeComponent();
 
-            MainPage = new WelomePage();
+            //MainPage = new LoginPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

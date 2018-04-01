@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BlippOn.Views.Settings">
+    <ContentPage.Content>
+                 <StackLayout BackgroundColor="Green" HorizontalOptions="CenterAndExpand" VerticleOptions="CenterAndExpand">
+                <Label Text="Settings" TextColor="white" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+               <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

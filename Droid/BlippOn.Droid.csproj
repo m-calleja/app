@@ -133,8 +133,14 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\avatar.png" />
-    <AndroidResource Include="Resources\drawable\expand-arrow.png" />
     <AndroidResource Include="Resources\drawable\bg.jpg" />
+    <AndroidResource Include="Resources\drawable\facebook_square.png" />
+    <AndroidResource Include="Resources\drawable\ic_keyboard_arrow_down.png" />
+    <AndroidResource Include="Resources\drawable\ic_shortcut_explore.png" />
+    <AndroidResource Include="Resources\drawable\ic_shortcut_videogame_asset.png" />
+    <AndroidResource Include="Resources\drawable\ic_shortcut_redeem.png" />
+    <AndroidResource Include="Resources\drawable\ic_shortcut_search.png" />
+    <AndroidResource Include="Resources\drawable\ic_shortcut_settings.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />

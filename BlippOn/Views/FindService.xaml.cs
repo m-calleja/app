@@ -3,22 +3,13 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace BlippOn
+namespace BlippOn.Views
 {
-    public partial class WelomePage : ContentPage
+    public partial class FindService : ContentPage
     {
-
-
-
-
-
-        public WelomePage()
+        public FindService()
         {
             InitializeComponent();
-
         }
-
-
-
     }
 }
