@@ -10,6 +10,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 namespace BlippOn
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : MasterDetailPage
     {
 
@@ -36,7 +37,7 @@ namespace BlippOn
             var page1 = new MasterPageItem() { Title = "Find a Service", Icon = "ic_shortcut_search.png", TargetType = typeof(FindService) };
             var page2 = new MasterPageItem() { Title = "Games", Icon = "ic_shortcut_videogame_assets.png", TargetType = typeof(Games) };
             var page3 = new MasterPageItem() { Title = "Redeem Offers", Icon = "ic_shortcut_redeem.png", TargetType = typeof(Redeem_Offers) };
-            var page4 = new MasterPageItem() { Title = "Explore" , Icon = "ic_shortcut_explore.png", TargetType = typeof(Explore) };
+            var page4 = new MasterPageItem() { Title = "Explore", Icon = "ic_shortcut_explore.png", TargetType = typeof(Explore) };
             var page5 = new MasterPageItem() { Title = "Messages", Icon = "ic_local_parking.png", TargetType = typeof(Messages) };
             var page6 = new MasterPageItem() { Title = "Settings", Icon = "ic_shortcut_settings.png", TargetType = typeof(Settings) };
             // Adding menu items to menuList
@@ -48,20 +49,33 @@ namespace BlippOn
             menuList.Add(page6);
 
 
-            // Setting our list to be ItemSource for ListView in MainPage.xaml
-            navigationDrawerList.ItemsSource = menuList;
-            // Initial navigation, this can be used for our home page
+             //Setting our list to be ItemSource for ListView in MainPage.xaml
+                navigationDrawerList.ItemsSource = menuList;
+                // Initial navigation, this can be used for our home page
+                //void Window_ContentRendered(object sender, EventArgs e)
+                //{
             Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(MainPage)));
-            this.BindingContext = new
-            {
-                Header = "",
-                Image = "http://www3.hilton.com/resources/media/hi/GSPSCHF/en_US/img/shared/full_page_image_gallery/main/HH_food_22_675x359_FitToBoxSmallDimension_Center.jpg",
-                //Footer = "         -------- Welcome To HotelPlaza --------           "
-                Footer = "Welcome To Blippon"
-            };
+                this.BindingContext = new
+                {
+                    Header = "",
+                    Image = "http://www3.hilton.com/resources/media/hi/GSPSCHF/en_US/img/shared/full_page_image_gallery/main/HH_food_22_675x359_FitToBoxSmallDimension_Center.jpg",
+                    //Footer = "         -------- Welcome To HotelPlaza --------           "
+                    Footer = "Welcome To Blippon"
+                };
+            //    //}
+            //}
+            //Detail = new NavigationPage(new ContentPage()
+            //{
+            //    Title = "First Page"
+
+            //});
+                        //    Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ViewSet)));
+            //Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ViewMain)));
+                //Detail = new NavigationPage(new ViewMain());
+
+
         }
-
-
+        //}
 
         private void OnMenuItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
