@@ -51,7 +51,7 @@ namespace BlippOn
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;
             // Initial navigation, this can be used for our home page
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(ViewMain)));
+            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(MainPage)));
             this.BindingContext = new
             {
                 Header = "",

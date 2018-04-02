@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="BlippOn.Views.Invite">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BlippOn.Views.Invite">
     <ContentPage.Content>
                  <StackLayout BackgroundColor="Green" HorizontalOptions="CenterAndExpand" VerticleOptions="CenterAndExpand">
                 <Label Text="Invite" TextColor="white" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
